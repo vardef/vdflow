@@ -15,6 +15,10 @@
     "email": "vardef@mockio.cn"
   },
   "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:bun",
+    "build:bun": "bun build.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

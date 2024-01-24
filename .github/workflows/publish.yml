@@ -51,10 +51,6 @@ jobs:
       # - name: Test
       #   run: bun run test
 
-      - name: Setup npmrc
-        run: echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" > .npmrc
-        env:
-          NPM_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
       - name: "Publish"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_ACCESS_TOKEN }}
